@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.img-thumbnail {
+  max-width: 300px;
+}
+
+.error-text {
+  white-space: pre-wrap;
+}
