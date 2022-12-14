@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./Components/Header";
 // import Footer from "./Components/Footer";
 import About from "./Components/About";
-// import Portfolio from "./Components/Portfolio";
+import Portfolio from "./Components/Portfolio";
 // import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 
@@ -12,14 +12,12 @@ function App() {
   const determinePage = () => {
     if (currentPage === "About") {
       return <About />;
-      // }
-      // if (currentPage === "Portfolio") {
-      //   return <Portfolio />;
-      // }
-      // if (currentPage === "Resume") {
-      //   return <Resume />;
-      // }
+    } else if (currentPage === "Portfolio") {
+      return <Portfolio />;
     }
+    // if (currentPage === "Resume") {
+    //   return <Resume />;
+    // }
     return <Contact />;
   };
 
