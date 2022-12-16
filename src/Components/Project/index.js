@@ -1,4 +1,5 @@
-import { Card, CardBody, CardTitle, CardText } from "reactstrap";
+import { Card, CardBody, CardTitle, CardLink, Row } from "reactstrap";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Project = () => {
   const projectArray = [
@@ -43,24 +44,29 @@ const Project = () => {
   ];
 
   return (
-    <div>
-      {projectArray.map((project) => (
-        <Card className="col-12 col-sm-6 col-md-4 mb-3">
-          <img alt={project.name} src={require(project.imageSrc)} />
-          <CardBody>
+    <Row className="justify-content-between d-block d-sm-flex">
+      {projectArray.map((project, i) => (
+        <Card
+          className="col-12 col-sm-6 col-md-5 mb-3 p-0 mx-auto project-cards"
+          key={project.name}
+        >
+          <img
+            alt={project.name}
+            src={require(`../../assets/imgs/${i}.png`)}
+            className="project-imgs"
+          />
+          <CardBody className="text-center">
             <CardTitle tag="h5">{project.name}</CardTitle>
-            <CardText>
-              <a href={project.githubLink}>
-                <i class="bi-github" role="img" aria-label="GitHub"></i>
-              </a>
-              <a href={project.deployedLink}>
-                <i class="bi bi-app-indicator"></i>
-              </a>
-            </CardText>
+            <CardLink href={project.githubLink}>
+              <i className="bi bi-github mx-auto"></i>
+            </CardLink>
+            <CardLink href={project.deployedLink}>
+              <i className="bi bi-app-indicator"></i>
+            </CardLink>
           </CardBody>
         </Card>
       ))}
-    </div>
+    </Row>
   );
 };
 

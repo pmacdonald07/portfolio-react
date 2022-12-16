@@ -2,19 +2,19 @@ import { Container, Row, Col } from "reactstrap";
 
 const About = () => {
   return (
-    <Container>
-      <Row className="mb-3">
-        <Col>
-          <h3>About Me</h3>
+    <Container className="mt-3">
+      <Row className="d-block d-md-flex align-items-center pt-3">
+        <Col className="col col-md-6">
+          <h3 className="text-center">About Me</h3>
         </Col>
-      </Row>
-      <Row>
-        <Col d-block-md>
-          <img
-            src={require(`../../assets/imgs/pfp.jpg`)}
-            alt="professional-pic"
-            className="img-thumbnail mb-3 m-auto-md"
-          />
+        <Col className="col col-md-6">
+          <div className="text-center">
+            <img
+              src={require(`../../assets/imgs/pfp.jpg`)}
+              alt="professional-pic"
+              className="img-thumbnail mb-3 mx-auto pfp"
+            />
+          </div>
         </Col>
       </Row>
       <Row>

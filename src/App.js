@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Header from "./Components/Header";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
-// import Resume from "./Components/Resume";
+import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 
 function App() {
@@ -14,10 +14,9 @@ function App() {
       return <About />;
     } else if (currentPage === "Portfolio") {
       return <Portfolio />;
+    } else if (currentPage === "Resume") {
+      return <Resume />;
     }
-    // if (currentPage === "Resume") {
-    //   return <Resume />;
-    // }
     return <Contact />;
   };
 
@@ -30,7 +29,7 @@ function App() {
         handlePageChange={handlePageChange}
       ></Header>
       {determinePage()}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
