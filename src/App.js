@@ -23,13 +23,15 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="App">
-      <Header
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      ></Header>
-      {determinePage()}
-      <Footer />
+    <div className="App" id="page-container">
+      <div id="content-wrap">
+        <Header
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        ></Header>
+        {determinePage()}
+        <Footer />
+      </div>
     </div>
   );
 }

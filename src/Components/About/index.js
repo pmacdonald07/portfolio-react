@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "reactstrap";
+import Image from "../Image";
 
 const About = () => {
   return (
@@ -9,11 +10,12 @@ const About = () => {
         </Col>
         <Col className="col col-md-6">
           <div className="text-center">
-            <img
+            {/* <img
               src={require(`../../assets/imgs/pfp.jpg`)}
               alt="professional-pic"
               className="img-thumbnail mb-3 mx-auto pfp"
-            />
+            /> */}
+            <Image />
           </div>
         </Col>
       </Row>

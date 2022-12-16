@@ -2,9 +2,17 @@ import { Container, Row, Col, List } from "reactstrap";
 
 const Resume = () => {
   return (
-    <Container>
+    <Container className="mb-4">
       <Row>
         <h3 className="text-center text-md-left">Resume</h3>
+        <a
+          href={require(`../../assets/Patrick_MacDonald_Resume.pdf`)}
+          className="text-decoration-none mb-2 text-center text-md-left text-dark"
+          download
+          id="download-link"
+        >
+          Click To Download My Resume
+        </a>
       </Row>
       <Row className="d-block d-md-flex">
         <Col className="col col-md-6 text-center text-md-left">
