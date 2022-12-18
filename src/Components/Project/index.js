@@ -1,4 +1,4 @@
-import { Card, CardBody, CardTitle, CardLink, Row } from "reactstrap";
+import { Card, CardLink, Row, Col, CardImgOverlay } from "reactstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Project = () => {
@@ -44,29 +44,31 @@ const Project = () => {
   ];
 
   return (
-    <Row className="justify-content-between d-block d-sm-flex">
-      {projectArray.map((project, i) => (
-        <Card
-          className="col-12 col-sm-6 col-md-5 mb-3 p-0 mx-auto project-cards"
-          key={project.name}
-        >
-          <img
-            alt={project.name}
-            src={require(`../../assets/imgs/${i}.png`)}
-            className="project-imgs"
-          />
-          <CardBody className="text-center">
-            <CardTitle tag="h5">{project.name}</CardTitle>
-            <CardLink href={project.githubLink}>
-              <i className="bi bi-github mx-auto"></i>
-            </CardLink>
-            <CardLink href={project.deployedLink}>
-              <i className="bi bi-app-indicator"></i>
-            </CardLink>
-          </CardBody>
-        </Card>
-      ))}
-    </Row>
+    <Col className="col col-md-9 pl-3 page-content justify-content-between d-block">
+      <Row>
+        {projectArray.map((project, i) => (
+          <Card
+            className="col-12 col-sm-6 col-md-5 mb-3 p-0 mx-auto project-cards"
+            key={project.name}
+            inverse
+          >
+            <img
+              alt={project.name}
+              src={require(`../../assets/imgs/${i}.png`)}
+              className="project-imgs"
+            />
+            <CardImgOverlay className="text-center border-top border-dark d-flex justify-content-center align-items-end">
+              <CardLink href={project.githubLink}>
+                <i className="bi bi-github mx-auto hide card-icon"></i>
+              </CardLink>
+              <CardLink href={project.deployedLink}>
+                <i className="bi bi-app-indicator hide card-icon"></i>
+              </CardLink>
+            </CardImgOverlay>
+          </Card>
+        ))}
+      </Row>
+    </Col>
   );
 };
 

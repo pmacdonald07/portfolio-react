@@ -1,26 +1,21 @@
 import { Container, Row, Col } from "reactstrap";
-import Image from "../Image";
+// import Image from "../Image";
 
 const About = () => {
   return (
-    <Container className="mt-3">
+    <Container className="my-3">
       <Row className="d-block d-md-flex align-items-center pt-3">
-        <Col className="col col-md-6">
+        <Col className="col col-md-3">
           <h3 className="text-center">About Me</h3>
         </Col>
-        <Col className="col col-md-6">
+        <Col className="col col-md-9 pl-3 mb-3 page-content">
           <div className="text-center">
-            {/* <img
+            <img
               src={require(`../../assets/imgs/pfp.jpg`)}
               alt="professional-pic"
               className="img-thumbnail mb-3 mx-auto pfp"
-            /> */}
-            <Image />
+            />
           </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
           <p>
             My name is Patrick MacDonald, and I am a full-stack developer from
             western North Carolina. My journey as a developer began with a

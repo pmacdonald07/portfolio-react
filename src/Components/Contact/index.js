@@ -9,6 +9,7 @@ import {
   FormText,
   Label,
   Input,
+  Col,
 } from "reactstrap";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
@@ -49,36 +50,43 @@ const Contact = () => {
   };
 
   return (
-    <Container>
-      <Row>
-        <h3>Contact</h3>
+    <Container className="mt-3">
+      <Row className="d-block d-md-flex align-items-center pt-3">
+        <Col className="col col-md-3">
+          <h3 className="text-center">Contact</h3>
+        </Col>
+
+        <Col className="col col-md-9 mb-3 page-content text-center text-md-left">
+          <Form id="contact-form" className="mb-3" onSubmit={handleSubmit}>
+            <FormGroup>
+              <Label for="name">Name:</Label>
+              <Input name="name" defaultValue={name} onBlur={handleChange} />
+            </FormGroup>
+            <FormGroup>
+              <Label for="email">Email address:</Label>
+              <Input name="email" defaultValue={email} onBlur={handleChange} />
+            </FormGroup>
+            <FormGroup>
+              <Label for="message">Message:</Label>
+              <Input
+                name="message"
+                type="textarea"
+                rows="5"
+                defaultValue={message}
+                onBlur={handleChange}
+              />
+            </FormGroup>
+            {errorMessage && (
+              <FormGroup>
+                <FormText className="error-text">{errorMessage}</FormText>
+              </FormGroup>
+            )}
+            <Button type="submit" className="submit-btn">
+              Submit
+            </Button>
+          </Form>
+        </Col>
       </Row>
-      <Form id="contact-form" onSubmit={handleSubmit}>
-        <FormGroup>
-          <Label for="name">Name:</Label>
-          <Input name="name" defaultValue={name} onBlur={handleChange} />
-        </FormGroup>
-        <FormGroup>
-          <Label for="email">Email address:</Label>
-          <Input name="email" defaultValue={email} onBlur={handleChange} />
-        </FormGroup>
-        <FormGroup>
-          <Label for="message">Message:</Label>
-          <Input
-            name="message"
-            type="textarea"
-            rows="5"
-            defaultValue={message}
-            onBlur={handleChange}
-          />
-        </FormGroup>
-        {errorMessage && (
-          <FormGroup>
-            <FormText className="error-text">{errorMessage}</FormText>
-          </FormGroup>
-        )}
-        <Button type="submit">Submit</Button>
-      </Form>
     </Container>
   );
 };

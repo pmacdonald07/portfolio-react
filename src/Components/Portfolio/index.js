@@ -4,12 +4,12 @@ import { Container, Row, Col } from "reactstrap";
 const Portfolio = () => {
   return (
     <Container className="mb-3">
-      <Row className="mb-3">
-        <Col className="px-4">
+      <Row className="d-block d-md-flex align-items-center pt-3 pb-4">
+        <Col className="col col-md-3">
           <h3 className="text-center text-md-left px-4">Portfolio</h3>
         </Col>
+        <Project></Project>
       </Row>
-      <Project></Project>
     </Container>
   );
 };

@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Raleway&display=swap');
+import background.png from
+
 :root {
   --bs-primary-color: #0275d8;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lora', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 20px;
+  background-image: url(../src/assets/imgs/background-4.png);
+  background-repeat: no-repeat;
+  background-size: 84vw 100%;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;;
 }
 
 .img-thumbnail {
@@ -23,6 +31,23 @@ code {
 
 .error-text {
   white-space: pre-wrap;
+}
+
+header ul a.nav-link {
+  color: black;
+}
+
+header ul a.nav-link:hover {
+  color: black;
+}
+
+header ul {
+  border-bottom: none !important;
+}
+
+header ul a.nav-link.active{
+  color: white !important;
+  background-color: #2a9d8f !important;
 }
 
 .project-cards {
@@ -35,9 +60,28 @@ code {
   filter: brightness(100%);
 }
 
+.project-cards:hover .hide {
+  display: block;
+}
+
+.project-imgs {
+  border-radius: 0.375rem;
+}
+
+.hide {
+  display: none;
+}
+
 i {
   font-size: 38px;
-  color: black;
+}
+
+.card-icon {
+  color: white;
+}
+
+.footer-icon {
+  color: #264653;
 }
 
 .pfp {
@@ -45,6 +89,9 @@ i {
   width: 200px;
   border-radius: 50%;
   filter: brightness(90%);
+  border: solid;
+  border-color: #264653;
+  border-width: 2px;
 }
 
 .pfp:hover {
@@ -61,6 +108,31 @@ i {
 
 i:hover {
   filter: brightness(100%);
+}
+
+.page-content {
+  /* border-left: solid;
+  border-left-width: thin; */
+  padding-left: 25px;
+}
+
+.border-top {
+  border-color: #264653 !important;
+}
+
+input {
+  border: solid !important;
+  border-color: #2a9d8f !important;
+}
+
+textarea {
+  border: solid !important;
+  border-color: #2a9d8f !important;
+}
+
+.submit-btn {
+  background-color: #264653;
+  width: 100%;
 }
 
 #page-container {
@@ -82,5 +154,18 @@ i:hover {
 @media screen and (min-width: 768px) {
   .text-md-left {
     text-align: left!important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-content{
+    border-left: none;
+    /* border-top: solid;
+    border-top-width: thin; */
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+  .small-text-center {
+    text-align: center;
   }
 }
