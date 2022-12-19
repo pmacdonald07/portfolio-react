@@ -1,5 +1,7 @@
 # Portfolio-React
   
+  This application is live here:
+  https://pmacdonald07.github.io/portfolio-react/
 
   ## Description
   This app is a Single Page Application created with React. It is my professional portfolio. 
