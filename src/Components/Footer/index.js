@@ -12,13 +12,13 @@ const Footer = () => {
 
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <a href="https://www.linkedin.com/in/patrick-macdonald-nc/">
-          <i class="bi bi-linkedin mx-1 footer-icon"></i>
+          <i className="bi bi-linkedin mx-1 footer-icon"></i>
         </a>
       </motion.div>
 
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
         <a href="https://www.instagram.com/pmacdonald89/?hl=en">
-          <i class="bi bi-instagram mx-1 footer-icon"></i>
+          <i className="bi bi-instagram mx-1 footer-icon"></i>
         </a>
       </motion.div>
     </footer>
