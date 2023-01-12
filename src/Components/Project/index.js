@@ -1,45 +1,44 @@
-import { Card, CardLink, Row, Col, CardImgOverlay } from "reactstrap";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import { Card, CardLink, Row, Col, CardImgOverlay } from 'reactstrap';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Project = () => {
   const projectArray = [
     {
-      name: "Flashaholic",
-      githubLink: "https://github.com/pmacdonald07/Flashaholic",
-      deployedLink: "https://shielded-sea-30882.herokuapp.com/",
-      imageSrc: "../../assets/imgs/Flashaholic-screenshot.png",
+      name: 'Our Place',
+      githubLink: 'https://github.com/awchen85/project-3',
+      deployedLink: 'https://p3-our-place.herokuapp.com/',
+      imageSrc: `../../assets/imgs/our-place.jpg`,
     },
     {
-      name: "Meal Maker",
-      githubLink: "https://github.com/pmacdonald07/Meal-Maker",
-      deployedLink: "https://pmacdonald07.github.io/Meal-Maker/",
+      name: 'Flashaholic',
+      githubLink: 'https://github.com/pmacdonald07/Flashaholic',
+      deployedLink: 'https://shielded-sea-30882.herokuapp.com/',
+      imageSrc: '../../assets/imgs/Flashaholic-screenshot.png',
+    },
+    {
+      name: 'Meal Maker',
+      githubLink: 'https://github.com/pmacdonald07/Meal-Maker',
+      deployedLink: 'https://pmacdonald07.github.io/Meal-Maker/',
       imageSrc: `../../assets/imgs/Meal-Maker-Final.png`,
     },
     {
-      name: "Note Taker",
-      githubLink: "https://github.com/pmacdonald07/note-taker",
-      deployedLink: "https://fierce-sierra-21623.herokuapp.com/",
+      name: 'Note Taker',
+      githubLink: 'https://github.com/pmacdonald07/note-taker',
+      deployedLink: 'https://fierce-sierra-21623.herokuapp.com/',
       imageSrc: `../../assets/imgs/note-taker.png`,
     },
     {
-      name: "Social Network API",
-      githubLink: "https://github.com/pmacdonald07/social-network-api",
+      name: 'Social Network API',
+      githubLink: 'https://github.com/pmacdonald07/social-network-api',
       deployedLink:
-        "https://drive.google.com/file/d/1_qKEubWP7oLLxCirawkqJR2mBLepMPhU/view",
+        'https://drive.google.com/file/d/1_qKEubWP7oLLxCirawkqJR2mBLepMPhU/view',
       imageSrc: `../../assets/imgs/social-network-api.png`,
     },
     {
-      name: "Weather Dashboard",
-      githubLink: "https://github.com/pmacdonald07/weather-dashboard",
-      deployedLink: "https://pmacdonald07.github.io/weather-dashboard/",
+      name: 'Weather Dashboard',
+      githubLink: 'https://github.com/pmacdonald07/weather-dashboard',
+      deployedLink: 'https://pmacdonald07.github.io/weather-dashboard/',
       imageSrc: `../../assets/imgs/weather-dashboard.png`,
-    },
-    {
-      name: "Team Profile Generator",
-      githubLink: "https://github.com/pmacdonald07/team-profile-generator",
-      deployedLink:
-        "https://drive.google.com/file/d/14a8gd0CbEbUEP4ud7IB1Vn1KKTCH_00e/view",
-      imageSrc: `../../assets/imgs/team-profile-generator.png`,
     },
   ];
 
