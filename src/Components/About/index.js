@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from 'reactstrap';
 // import Image from "../Image";
 
 const About = () => {
@@ -18,13 +18,15 @@ const About = () => {
           </div>
           <p>
             My name is Patrick MacDonald, and I am a full-stack developer from
-            western North Carolina. My journey as a developer began with a
-            six-month coding boot camp at UNC Chapel Hill. I am a versatile
-            developer with a passion for collaboration and continued learning. I
-            am constantly honing my skills and learning new technologies and am
-            hungry to work on more projects using React. I intend to become as
-            proficient as possible in both front-end and back-end development so
-            that I can fit into any development team and help wherever possible.
+            western North Carolina. I have a Bachelor of Arts in English from
+            Furman University and recently obtained a certificate for full stack
+            development from UNC Chapel Hill. I am a versatile developer with a
+            passion for collaboration and continued learning. I enjoy creating
+            and am skilled in developing mobile responsive web applications
+            using JavaScript, HTML5, CSS, React, jQuery, MySQL, GraphQL,
+            Express, and more. My passion and attentiveness make me adept at
+            translating user needs into polished functionality. I am known by my
+            colleagues for my determination, resourcefulness, and precision.
             <br></br>
             <br></br>
             In my personal life, I am grateful every day for my wonderful wife,
