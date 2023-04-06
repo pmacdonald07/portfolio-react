@@ -1,4 +1,4 @@
-import { Container, Row, Col, List } from "reactstrap";
+import { Container, Row, Col, List } from 'reactstrap';
 
 const Resume = () => {
   return (
@@ -27,12 +27,13 @@ const Resume = () => {
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
-                  <li>JQuery</li>
-                  <li>responsive design</li>
                   <li>React</li>
+                  <li>Responsive Design</li>
+                  <li>JQuery</li>
                   <li>ReactStrap</li>
                   <li>Bootstrap</li>
                   <li>Bulma</li>
+                  <li>Tailwind</li>
                 </List>
               </Col>
               <Col className="col col-md-6 text-center text-md-left">
@@ -40,6 +41,7 @@ const Resume = () => {
                   Back-End Proficiencies
                 </h4>
                 <List type="unstyled">
+                  <li>Python</li>
                   <li>APIs</li>
                   <li>Node</li>
                   <li>Express</li>

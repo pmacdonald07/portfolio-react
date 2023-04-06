@@ -6,7 +6,7 @@ const About = () => {
     <Container className="my-3">
       <Row className="d-block d-md-flex align-items-center pt-3">
         <Col className="col col-md-3">
-          <h3 className="text-center">About Me</h3>
+          <h3 className="text-center text-md-left">About Me</h3>
         </Col>
         <Col className="col col-md-9 pl-3 mb-3 page-content">
           <div className="text-center">

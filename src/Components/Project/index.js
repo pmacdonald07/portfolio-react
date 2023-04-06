@@ -22,23 +22,22 @@ const Project = () => {
       imageSrc: `../../assets/imgs/Meal-Maker-Final.png`,
     },
     {
+      name: 'Tech Blog',
+      githubLink: 'https://github.com/pmacdonald07/tech-blog-mvc',
+      deployedLink: 'https://floating-cliffs-88153.herokuapp.com/',
+      imageSrc: `../../assets/imgs/social-network-api.png`,
+    },
+    {
+      name: 'Python Newsfeed',
+      githubLink: 'https://github.com/pmacdonald07/python-newsfeed',
+      deployedLink: 'https://python-newsfeed-23.herokuapp.com/',
+      imageSrc: `../../assets/imgs/weather-dashboard.png`,
+    },
+    {
       name: 'Note Taker',
       githubLink: 'https://github.com/pmacdonald07/note-taker',
       deployedLink: 'https://fierce-sierra-21623.herokuapp.com/',
       imageSrc: `../../assets/imgs/note-taker.png`,
-    },
-    {
-      name: 'Social Network API',
-      githubLink: 'https://github.com/pmacdonald07/social-network-api',
-      deployedLink:
-        'https://drive.google.com/file/d/1_qKEubWP7oLLxCirawkqJR2mBLepMPhU/view',
-      imageSrc: `../../assets/imgs/social-network-api.png`,
-    },
-    {
-      name: 'Weather Dashboard',
-      githubLink: 'https://github.com/pmacdonald07/weather-dashboard',
-      deployedLink: 'https://pmacdonald07.github.io/weather-dashboard/',
-      imageSrc: `../../assets/imgs/weather-dashboard.png`,
     },
   ];
 

@@ -1,5 +1,5 @@
-import validator from "validator";
-import { useState, useRef } from "react";
+import validator from 'validator';
+import { useState, useRef } from 'react';
 import {
   Container,
   Row,
@@ -10,40 +10,40 @@ import {
   Label,
   Input,
   Col,
-} from "reactstrap";
-import { capitalizeFirstLetter } from "../../utils/helpers";
-import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
+} from 'reactstrap';
+import { capitalizeFirstLetter } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
   const { name, email, message } = formState;
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
 
   const serviceId = process.env.REACT_APP_SERVICE_ID;
   const publicKey = process.env.REACT_APP_PUBLIC_KEY;
   const templateId = process.env.REACT_APP_TEMPLATE_ID;
   const form = useRef();
 
-  const handleChange = (e) => {
-    if (e.target.name === "email") {
+  const handleChange = e => {
+    if (e.target.name === 'email') {
       const isValid = validator.isEmail(e.target.value);
       console.log(isValid);
       if (!isValid) {
-        setErrorMessage("Your email is invalid");
+        setErrorMessage('Your email is invalid');
       } else {
-        setErrorMessage("");
+        setErrorMessage('');
       }
     } else {
       const isEmpty = validator.isEmpty(e.target.value);
       if (isEmpty) {
         setErrorMessage(`${capitalizeFirstLetter(e.target.name)} is required`);
       } else {
-        setErrorMessage("");
+        setErrorMessage('');
       }
     }
     if (!errorMessage) {
@@ -53,29 +53,29 @@ const Contact = () => {
 
   const formReset = async () => {
     setFormState({
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(formState);
     formReset();
     emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
-      (result) => {
+      result => {
         console.log(result.text);
         Swal.fire({
-          icon: "success",
-          title: "Message Sent Successfully",
+          icon: 'success',
+          title: 'Message Sent Successfully',
         });
       },
-      (error) => {
+      error => {
         console.log(error.text);
         Swal.fire({
-          icon: "error",
-          title: "Something went wrong",
+          icon: 'error',
+          title: 'Something went wrong',
           text: error.text,
         });
       }
@@ -86,7 +86,7 @@ const Contact = () => {
     <Container className="mt-3">
       <Row className="d-block d-md-flex align-items-center pt-3">
         <Col className="col col-md-3">
-          <h3 className="text-center">Contact</h3>
+          <h3 className="text-center text-md-left">Contact</h3>
         </Col>
 
         <Col className="col col-md-9 mb-3 page-content text-center text-md-left">
