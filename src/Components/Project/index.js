@@ -84,6 +84,10 @@ const Project = () => {
 
   return (
     <Col className="col col-md-9 pl-3 page-content justify-content-between d-block">
+      <p className="text-center py-2 mb-3 portfolio-p">
+        Hover over a project to see buttons for a description, GitHub link, and
+        the deployed application link!
+      </p>
       <Row>
         {projectArray.map((project, i) => (
           <Card

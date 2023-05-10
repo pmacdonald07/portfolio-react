@@ -135,6 +135,12 @@ textarea {
   width: 100%;
 }
 
+.portfolio-p {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #2a9d8f;
+}
+
 #page-container {
   position: relative;
   min-height: 97vh;
@@ -154,6 +160,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .text-md-left {
     text-align: left!important;
+  }
+
+  .portfolio-p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
