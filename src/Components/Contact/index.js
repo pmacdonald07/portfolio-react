@@ -84,7 +84,7 @@ const Contact = () => {
 
   return (
     <Container className="mt-3">
-      <Row className="d-block d-md-flex align-items-center pt-3">
+      <Row className="d-block d-md-flex align-items-center pt-3 content-height">
         <Col className="col col-md-3">
           <h3 className="text-center text-md-left">Contact</h3>
         </Col>

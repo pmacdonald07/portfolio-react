@@ -136,7 +136,13 @@ textarea {
 }
 
 .portfolio-p {
-  border-top: 1px solid;
+  /* border-top: 1px solid; */
+  border-bottom: 1px solid;
+  border-color: #2a9d8f;
+}
+
+.resume-border {
+  width: 75%;
   border-bottom: 1px solid;
   border-color: #2a9d8f;
 }
@@ -162,6 +168,10 @@ textarea {
     text-align: left!important;
   }
 
+  .content-height {
+  min-height: 512px;
+}
+
   .portfolio-p {
     width: 85%;
     margin-left: auto;
@@ -179,5 +189,10 @@ textarea {
   }
   .small-text-center {
     text-align: center;
+  }
+
+  .resume-border {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

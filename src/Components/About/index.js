@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 const About = () => {
   return (
     <Container className="my-3">
-      <Row className="d-block d-md-flex align-items-center pt-3">
+      <Row className="d-block d-md-flex align-items-center pt-3 content-height">
         <Col className="col col-md-3">
           <h3 className="text-center text-md-left">About Me</h3>
         </Col>
